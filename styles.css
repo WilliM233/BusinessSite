@@ -1,3 +1,60 @@
+@font-face {
+    font-family: "NovaWave";
+    src: url('fonts/novawave-digital-exo-2-medium.ttf');
+}
+
 html {
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: NovaWave;
+}
+
+/** COLOR PALETTE
+*  #4B91F1
+*  #FFFFFF
+*/
+
+header {
+    background-image: url("images/novawave-digital-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+nav {
+    width: 100%;;
+}
+
+header ul {
+    max-height: 10%;
+}
+
+header li {
+    list-style: none;
+    display: inline-flex;
+    font-size: 1.5em;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: #4B91F1;
+    border-radius: 5px;
+    padding: 10px;
+    text-shadow: 1px 0px #000;
+    box-shadow: 5px 5px #000;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
 }
