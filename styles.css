@@ -16,6 +16,16 @@ a {
     font-family: NovaWave;
 }
 
+h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: #4B91F1;
+    margin: 1em auto;
+    width: 60%;
+    border: 1px none;
+    border-radius: 50px;
+}
+
 /** COLOR PALETTE
 *  #4B91F1
 *  #FFFFFF
@@ -71,7 +81,38 @@ a:hover {
 
 /********************** TESTIMONIALS **********************/
 
-    /****Design Idea, testimonials fill the left and right in two columns but each on their own row */
+.testimonial-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+}
+
+.testimonial {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.testimonial p:before {
+    content: open-quote;
+    font-size: 2em;
+    color: #4B91F1
+}
+
+.testimonial p:after {
+    content: close-quote;
+    font-size: 2em;
+    color: #4B91F1
+}
+
+.right {
+    justify-content: end;
+    text-align: right;
+}
+
 
 
 /********************** ABOUT US **********************/
