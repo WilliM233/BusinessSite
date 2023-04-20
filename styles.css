@@ -6,6 +6,7 @@
 html {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
 }
 
 h1,
@@ -23,6 +24,7 @@ h2 {
     background-color: #4B91F1;
     margin: 1em auto;
     width: 60%;
+    max-width: 1000px;
     border: 1px none;
     border-radius: 50px;
 }
@@ -33,6 +35,7 @@ h2 {
 */
 
 /********************** HEADER AND NAV **********************/
+
 
 header {
     background-image: url("images/novawave-digital-logo.png");
@@ -91,9 +94,9 @@ a:hover {
 
 .testimonial {
     display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-    
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
     font-weight: bold;
 }
 
@@ -139,8 +142,57 @@ a:hover {
     border: 5px solid #4B91F1;
     padding: 20px;
     border-radius: 5px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /********************** MEET THE TEAM **********************/
 
+.team-container {
+    display: flex;
+    text-align: center;
+}
+
+.team-member img {
+    height: 500px;
+    border: 5px solid #4B91F1;
+    border-radius: 100%;
+}
+
+.team-member {
+    padding: 20px;
+}
+
+.team-member h3 {
+    color: black;
+}
+
 /********************** FOOTER **********************/
+
+footer {
+
+}
+
+footer a {
+    float: right;
+    margin: 0 5% 50px 0;
+}
+
+footer p {
+    float: left;
+    margin: 0 0 50px 5%;
+}
+
+#contact h2,
+#contact h3 {
+    color: black;
+    text-align: center;
+}
+
+
+/********************** MEDIA QUERIES **********************/
+@media screen and (max-width: 750px) {
+    html {
+        background-color: black;
+    }
+}
